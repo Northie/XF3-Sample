@@ -1,0 +1,10 @@
+
+onAfterRestCreate
+onAfterRestDestroy
+onAfterRestRead
+onAfterRestUpdate
+onBeforeResponseSetData
+onFormRequested
+onFormSubmitFail
+onFormSubmitPass
+onFormSubmitted
