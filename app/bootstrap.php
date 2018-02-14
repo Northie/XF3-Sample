@@ -11,6 +11,12 @@ define("X1_DAT_PATH",realpath(X1_APP_PATH."/X1/"));
 define("APP_CLASS_LIST",X1_DAT_PATH."/class-list.static.php");
 //define("APP_CLASS_LIST_JSON",X1_DAT_PATH."/class-list.js");
 
+echo __FILE__;
+echo "<br />\n";
+die("Define constants in above file to contine; then delete these lines");
+
+define("X1_APP_NAME","New App");
+
 include(X1_PATH."/bootstrap.php");
 
 \settings\general::Load()->set(['XENECO','ENV'], 'DEV');
