@@ -5,9 +5,8 @@ include("../app/bootstrap.php");
 
 $contexts = [
     'www',
-    'control',
-    'api',
-    'admin'
+    //'admin',
+    //'api',
 ];
 
 $c = new \flow\controllers\FrontController([
