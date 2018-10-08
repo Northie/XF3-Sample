@@ -11,7 +11,7 @@ trait _database {
             $settings['app_cache']['type'] = 'file';
             $settings['app_cache']['path'] =  X1_DAT_PATH.'/cache/';
             
-            $settings['app_cache']['type'] = 'none';
+            $settings['app_cache']['type'] = 'cache/none';
 //            $settings['app_cache']['host'] = '127.0.0.1';
 //            $settings['app_cache']['user'] = '';
 //            $settings['app_cache']['pass'] = 'cachepass';

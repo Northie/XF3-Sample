@@ -1,7 +1,7 @@
 <?php
 
 $t1 = microtime(1);
-include("../app/bootstrap.php");
+include("../server/bootstrap.php");
 
 $contexts = [
     'www',
@@ -9,17 +9,17 @@ $contexts = [
     //'api',
 ];
 
-$c = new \flow\controllers\FrontController([
+$app = new \flow\controllers\FrontController([
     'contexts'=>[
         'names' => $contexts,
         'default'=>'www',
         'type'=>  \flow\controllers\FrontController::CONTEXT_TYPE_FOLDER,
-        'base'=>'x1-app/html'
+        'base'=>'x1-empty-app/webroot'
     ]
 ]);
 
-$c->Init();
-$c->Execute();
+$app->Init();
+$app->Execute();
 //*/
 //$c->getResponse()->respond();
 

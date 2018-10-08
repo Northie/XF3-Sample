@@ -2,7 +2,7 @@
 
 error_reporting(E_ALL &~ E_NOTICE);
 
-define("X1_PATH",  realpath(dirname(__FILE__)."/../../x1/"));
+define("X1_PATH",  realpath(dirname(__FILE__)."/../../z4_libraries/"));
 
 define("X1_APP_PATH",realpath(dirname(__FILE__)));
 define("X1_WEB_PATH",realpath(X1_APP_PATH."/../"));
@@ -11,9 +11,9 @@ define("X1_DAT_PATH",realpath(X1_APP_PATH."/X1/"));
 define("APP_CLASS_LIST",X1_DAT_PATH."/class-list.static.php");
 //define("APP_CLASS_LIST_JSON",X1_DAT_PATH."/class-list.js");
 
-echo __FILE__;
-echo "<br />\n";
-die("Define constants in above file to contine; then delete these lines");
+//echo __FILE__;
+//echo "<br />\n";
+//die("Define constants in above file to contine; then delete these lines");
 
 define("X1_APP_NAME","New App");
 
